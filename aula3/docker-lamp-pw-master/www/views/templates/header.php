@@ -13,8 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+    
 
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,6 +22,8 @@
     <script>
         document.getElementById("demo").innerHTML = "My First JavaScript";
     </script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
         
     <script src="assets/js/JavaScript.js"></script>
 </head>
@@ -33,7 +34,7 @@
     </header>
 
     <section class="row bg-secondary text-white justify-content-center">
-        <nav class="col-md-3">
+        <nav class="col-md-1 navbar-expand-sm justify-content-center">
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a id="home" class="nav-link" href="?page=home">home</a>
@@ -50,4 +51,4 @@
             </ul>
         </nav>
 
-        <article class="col-md-9 bg-dark text-white">
+        <article class="col-md-11 bg-dark text-white">

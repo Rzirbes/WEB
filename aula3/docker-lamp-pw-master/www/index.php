@@ -2,6 +2,7 @@
            
 <?php
 
+
 require_once("controllers/SiteController.php");
 $site = new SiteController();
 
@@ -17,7 +18,7 @@ if(isset($_GET["page"])){
         $site -> contact(); 
     }
 }else{
-    
+    $site -> home();
 };
 
 
