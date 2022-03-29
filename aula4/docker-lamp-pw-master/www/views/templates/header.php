@@ -29,7 +29,7 @@
 </head>
 <body>
 
-    <header id="cabecalho" class="jumbotron text-center">
+    <header class="jumbotron text-center">
         <h1>CABEÇALHO</h1>
     </header>
 

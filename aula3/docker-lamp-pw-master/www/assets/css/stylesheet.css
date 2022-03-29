@@ -1,8 +1,6 @@
-header{
-    margin-bottom: 5px;
-
-    background-color: pink;
-};
+#cabecalho{
+    background-color: pink !important;
+}
 
 
 
