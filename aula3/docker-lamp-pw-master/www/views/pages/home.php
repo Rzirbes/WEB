@@ -1,6 +1,2 @@
-<h1>Home PHP</h1>
-
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit maxime aperiam eaque, deserunt error nam assumenda excepturi pariatur repellat consequuntur, natus ducimus dolores quo voluptas harum aspernatur sint quidem aliquam?</p>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit maxime aperiam eaque, deserunt error nam assumenda excepturi pariatur repellat consequuntur, natus ducimus dolores quo voluptas harum aspernatur sint quidem aliquam?</p>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit maxime aperiam eaque, deserunt error nam assumenda excepturi pariatur repellat consequuntur, natus ducimus dolores quo voluptas harum aspernatur sint quidem aliquam?</p>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit maxime aperiam eaque, deserunt error nam assumenda excepturi pariatur repellat consequuntur, natus ducimus dolores quo voluptas harum aspernatur sint quidem aliquam?</p>
+<h1>Minha home</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error repellendus eaque laboriosam dignissimos corporis nulla accusantium non, sed a harum eum sapiente consequatur. Velit doloribus quasi omnis impedit laudantium molestiae.</p>

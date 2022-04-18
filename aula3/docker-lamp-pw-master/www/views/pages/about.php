@@ -1,5 +1,2 @@
-<h1>Sobre PHP</h1>
-
-<p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium inventore reiciendis optio esse numquam, nemo repellat cum reprehenderit vitae excepturi voluptate est, eos hic architecto expedita ducimus repellendus magni. Hic.
-</p>
+<h1>Mminha Sobre</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quae sint omnis at possimus similique repellendus eaque quisquam, pariatur necessitatibus. Ad officiis voluptate blanditiis dignissimos, autem ratione repellendus libero. Quaerat.</p>
