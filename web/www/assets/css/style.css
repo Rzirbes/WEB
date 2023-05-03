@@ -1,0 +1,22 @@
+body{
+    margin: 0 auto;
+    background-color: #343a40 !important;
+}
+
+
+
+  
+  .nav-tabs .nav-link {
+    background-color: #343a40 !important;
+    color: white !important;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* cor de fundo do rodapé */
+    color: #fff; /* cor do texto do rodapé */
+    text-align: center;
+    margin: 0%;
+ }

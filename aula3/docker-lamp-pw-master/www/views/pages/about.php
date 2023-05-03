@@ -1,2 +1,0 @@
-<h1>Mminha Sobre</h1>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quae sint omnis at possimus similique repellendus eaque quisquam, pariatur necessitatibus. Ad officiis voluptate blanditiis dignissimos, autem ratione repellendus libero. Quaerat.</p>

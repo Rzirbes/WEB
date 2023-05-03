@@ -1,2 +1,0 @@
-<h1>Minha products</h1>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ratione assumenda, repudiandae impedit, repellat voluptas nobis dolore alias nulla saepe eaque! Iusto eaque eum perferendis nihil aliquid soluta id tempore!</p>
