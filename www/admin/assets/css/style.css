@@ -3,12 +3,18 @@ body{
     background-color: #343a40 !important;
 }
 
-
+.dropdown-menu .dropdown-item {
+  list-style: none;
+}
 
   
   .nav-tabs .nav-link {
     background-color: #343a40 !important;
     color: white !important;
+  }
+
+  .nav-item {
+    margin-bottom: 10px !important;  /* adiciona 10 pixels de espaço entre os botões */
   }
 
   /* .footer {

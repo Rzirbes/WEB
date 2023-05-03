@@ -17,5 +17,8 @@ class MainController {
         require_once('views/main/login.php');
      }
 
-    function logout() { }
+    function logout() {
+        session_destroy();
+        header('Location: index.php');
+     }
 }

@@ -8,3 +8,9 @@
     passagens
     de Lorem Ipsum, e mais recentemente quando
     passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+
+<?php
+
+    var_dump($_SESSION['user']);
+
+?>

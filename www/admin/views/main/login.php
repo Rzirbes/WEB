@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
 
     <div class="container mt-5">
@@ -18,10 +20,10 @@
                         Login
                     </div>
                     <div class="card-body">
-                        <form action="" method="POST">
+                        <form action="?controller=user&action=validateLogin" method="POST">
                             <div class="form-group mb-3">
                                 <label for="username">Usuário</label>
-                                <input type="text" name="username" id="username" class="form-control" placeholder="Digite seu usuário">
+                                <input type="text" name="login" id="username" class="form-control" placeholder="Digite seu usuário">
                             </div>
                             <div class="form-group mb-3">
                                 <label for="password">Senha</label>
@@ -30,6 +32,9 @@
                             <div class="form-group text-center">
                                 <button type="submit" class="btn btn-primary">Entrar</button>
                             </div>
+                            <div>
+                                <a href="../" class="btn btn-light">Área pública</a>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -37,6 +42,7 @@
         </div>
     </div>
 
-   
+
 </body>
+
 </html>

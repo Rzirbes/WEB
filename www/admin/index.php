@@ -17,8 +17,49 @@ if(!isset($_GET['controller'])){
                 //setar uma ação base
             }else{
                 switch ($_REQUEST['action']) {
+                    case 'index':
+                        $main -> index();
+                    break;
+
                     case 'login':
                         $main -> login();
+                    break;
+
+                    case 'logout':
+                        $main -> logout();
+                    break;
+                }
+            }
+        break;
+
+        case 'user':
+            require_once('controller/UserController.php');
+            $user = new UserController();
+            if(!isset($_GET['action'])){
+                //setar uma ação base
+            }else{
+                switch ($_REQUEST['action']) {
+                    case 'validateLogin':
+                        $user -> validateLogin();
+                    break;
+                }
+            }
+        break;
+        case 'client':
+            require_once('controller/ClientController.php');
+            $client = new ClientController();
+            if(!isset($_GET['action'])){
+                //setar uma ação base
+            }else{
+                switch ($_REQUEST['action']) {
+                    case 'listClients':
+                        $client -> listClients();
+                    break;
+                    case 'insertClient':
+                        $client -> insertClient();
+                    break;
+                    case 'insertClientAction':
+                        $client -> insertClientAction();
                     break;
                 }
             }
