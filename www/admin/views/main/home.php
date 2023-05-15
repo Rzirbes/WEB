@@ -11,6 +11,6 @@
 
 <?php
 
-    var_dump($_SESSION['user']);
+    // var_dump($_SESSION['user']);
 
 ?>

@@ -3,6 +3,12 @@
 class ClientController
 {
 
+    function __construct(){
+        if(!isset($_SESSION['user'])){
+            header('Location: index.php?controller=main&action=login');
+        }
+    }
+
 
     function insertClient()
     {

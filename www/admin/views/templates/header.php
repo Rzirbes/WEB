@@ -35,13 +35,13 @@
         <nav class="col-sm-3">
             <ul class="nav flex-column justify-content-center ">
                 <li class="nav-item" style="list-style: none">
-                    <a id="home" class="nav-link <?php if ($page == 'home') echo 'active'; ?> text-dark" href="?controller=main&action=index">Home</a>
+                    <a id="home" class="nav-link text-dark" href="?controller=main&action=index">Home</a>
                 </li>
                 <li class="nav-item dropdown" style="list-style: none; margin-top: 10px">
                     <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Clientes</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="?controller=client&action=listClients">Listar Clientes</a></li>
-                        <li><a class="dropdown-item" href="?controller=client&action=insertClient">Cadastrar Clientes</a></li>
+                        <li><a id="insert" class="dropdown-item" href="?controller=client&action=insertClient">Cadastrar Clientes</a></li>
                     </ul>
                 </li>
             </ul>
