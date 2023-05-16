@@ -3,8 +3,9 @@
 class ClientController
 {
 
-    function __construct(){
-        if(!isset($_SESSION['user'])){
+    function __construct()
+    {
+        if (!isset($_SESSION['user'])) {
             header('Location: index.php?controller=main&action=login');
         }
     }
@@ -29,7 +30,7 @@ class ClientController
 
             $result = $clientModel->insertClientAction($name, $phone, $email, $address);
 
-            
+
             if ($result) {
                 $client = array(
                     'name' => $name,
@@ -37,11 +38,12 @@ class ClientController
                     'email' => $email,
                     'address' => $address
                 );
-                
+
                 // inserção bem sucedida, redireciona para página de sucesso
-                require_once('views/templates/header.php');
-                require_once('views/clients/insertClientAction.php');
-                require_once('views/templates/footer.php');
+                // require_once('views/templates/header.php');
+                // require_once('views/clients/insertClientAction.php');
+                // require_once('views/templates/footer.php');
+                header('Location: index.php?controller=client&action=listClients');
             } else {
                 // erro na inserção, exibe mensagem de erro
                 echo "Erro ao inserir cliente!";
@@ -72,5 +74,54 @@ class ClientController
         require_once('views/templates/header.php');
         require_once('views/clients/listClients.php');
         require_once('views/templates/footer.php');
+    }
+
+    function updateClient($idClient)
+    {
+
+        require_once('models/ClientModel.php');
+        $clientModel = new ClientModel();
+        $result = $clientModel->getClientByID($idClient);
+
+        if ($client = $result->fetch_assoc()) {
+
+            require_once('views/templates/header.php');
+            require_once('views/clients/updateClient.php');
+            require_once('views/templates/footer.php');
+        };
+    }
+
+    public function updateClientAction($idClient)
+    {
+        require_once('models/ClientModel.php');
+        $clientModel = new ClientModel();
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $name = $_POST['name'];
+            $phone = $_POST['phone'];
+            $email = $_POST['email'];
+            $address = $_POST['address'];
+
+            $result = $clientModel->updateClientAction($idClient, $name, $phone, $email, $address);
+
+            if ($result) {
+                header('Location: index.php?controller=client&action=listClients');
+                exit();
+            } else {
+                echo "Ocorreu um erro ao atualizar o cliente.";
+            }
+        } else {
+            // Se não for uma requisição POST, redirecionar para a página de listagem de clientes
+            header('Location: index.php?controller=client&action=listClients');
+            exit();
+        }
+    }
+
+    function deleteClient($idClient)
+    {
+        require_once('models/ClientModel.php');
+        $clientModel = new ClientModel();
+        $clientModel->deleteClientByID($idClient);
+        header('Location: index.php?controller=client&action=listClients');
     }
 }

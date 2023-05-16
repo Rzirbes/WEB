@@ -49,7 +49,7 @@ if(!isset($_GET['controller'])){
             require_once('controller/ClientController.php');
             $client = new ClientController();
             if(!isset($_GET['action'])){
-                //setar uma ação base
+                $client -> insertClient();
             }else{
                 switch ($_REQUEST['action']) {
                     case 'listClients':
@@ -60,6 +60,21 @@ if(!isset($_GET['controller'])){
                     break;
                     case 'insertClientAction':
                         $client -> insertClientAction();
+                    break;
+                    case 'updateClient':
+                        if(isset($_GET['id'])){
+                            $client -> updateClient($_GET['id']);
+                        }
+                    break;
+                    case 'updateClientAction':
+                        if(isset($_GET['id'])){
+                            $client -> updateClientAction($_GET['id']);
+                        }
+                    break;
+                    case 'deleteClient':
+                        if(isset($_GET['id'])){
+                            $client -> deleteClient($_GET['id']);
+                        }
                     break;
                 }
             }

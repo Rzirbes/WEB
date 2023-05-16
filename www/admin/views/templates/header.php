@@ -32,7 +32,7 @@
         <?php
         $page = isset($_GET['action']) ? $_GET['action'] : 'index'; // Define a página padrão como "home" se nenhum parâmetro for passado na URL
         ?>
-        <nav class="col-sm-3">
+        <nav class="col-sm-2">
             <ul class="nav flex-column justify-content-center ">
                 <li class="nav-item" style="list-style: none">
                     <a id="home" class="nav-link text-dark" href="?controller=main&action=index">Home</a>
@@ -47,7 +47,7 @@
             </ul>
         </nav>
 
-        <article class="col-sm-9">
+        <article class="col-sm-10">
 
 
 
